@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { color: #000; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+table { text-align: left; padding: 5px; }
+
+
+/****** HEADER MENU *******/
+header { box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+header .menu-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a .fas {
+    color: #000;
+    font-size: 2rem;
+    transition: 00.3s;
+}
+
+header a .fas:hover { color: #7a7a7a; }
+
+/****** formulario *******/
+.container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
+.container img,
+header .menu-nav a img {
+    width: 60px;
+    height: 80px;
+    padding: 10px;
+}
+
+.container .area { padding: 10px 5px; }
+
+.container .forma {
+    width: 440px;
+    background-color: #fdf6e3;
+    padding: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container .pacientes { display: flex; }
+
+.forma .texto {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-around;
+    border: none;
+    font-size: 15px;
+    text-align: left;
+}
+
+.forma .btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    transition: 00.3s;
+}
+
+.forma .btn:hover { background-color: #7a7a7a; }
+
+/****** FOOTER *******/
+.c-footer { padding: 10px; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.c-footer .c-footer-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c-footer .c-footer-center p { width: 60%; padding: 10px; }
+
+.c-footer .c-footer-center .redes { width: 50%; height: auto; }
+
+.c-footer .c-footer-center .redes a {
+    padding: 3px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+    transition: 00.3s;
+}
+
+.c-footer .c-footer-center .redes a:hover { color: #7a7a7a; }
+
+.c-footer .legend { text-align: center; padding: 5px; }
+
+.c-footer .legend p { padding: 5px; }
+
+.c-footer .legend hr { height: 4px; background-color: #000; }
+
+/****** Responsive *******/
+@media screen and (max-width: 900px) {
+    
+    .container, 
+    .c-footer .c-footer-center .redes { font-size: .8rem; }
+
+    .container .forma { width: 380px; }
+
+    .c-footer .c-footer-center { flex-direction: column; }
+
+    .c-footer .c-footer-center p,
+    .c-footer .c-footer-center .redes { width: 90%; margin: auto; }
+
+}

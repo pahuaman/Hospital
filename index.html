@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JQuery-->
+    <script src="js/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <nav class="menu-nav">
+                
+                <a href="index.html"><img src="img/imss.png" alt="logo" > </a>
+                
+                <a href="#" class="ham"><i class="fas fa-bars"></i></a>
+    
+            </nav>
+            
+        </header>
+
+        <div>
+
+            <form action="" class="forma">
+
+                <table>
+
+                    <caption><h2> Hospital muerto viviente </h2></caption>
+               
+                    <tr>
+                        <th><label for="">Nombre Paciente: </label></th>
+                        <th><input class="texto" type="text" id="nombre_paciente" name=""></th>
+                    </tr>
+                    <tr>
+                        <th><label for="">Edad:  </label></th>
+                        <th><input class="texto" type="text" id="edad_paciente" name="" size="3"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="">Tratamiento:  </label></th>
+                        <th>
+                            <select id="tratamiento_paciente">
+                                <option value=""></option>
+                                <option value="">Diabetes</option>
+                                <option value="">Hipertension</option>
+                                <option value="">Cirugia</option>
+                                <option value="">Intoxicacion</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="">Días internado: </label></th>
+                        <th><input class="texto" type="text" id="dias_internado" name="" size="3"></th>
+                    </tr>
+
+                </table>
+
+                <input class="btn" type="button" value="Enviar" id="enviar">
+
+                <div class="area">
+                    <textarea name="" id="imprimir" cols="30" rows="13" readonly></textarea>
+                </div>
+
+                <div class="pacientes">
+
+                    <table>
+                   
+                        <tr>
+                            <th><label for="">Pacientes con diabetes:  </label></th>
+                            <th><input class="texto" type="text" id="pacientes_diabetes" name="" size="3" readonly></th>
+                        </tr>
+                        <tr>
+                            <th><label for="">Pacientes con Hipertensión:  </label></th>
+                            <th><input class="texto" type="text" id="pacientes_hipertension" name="" size="3" readonly></th>
+                        </tr>
+                        <tr>
+                            <th><label for="">Pacientes en cirugía : </label></th>
+                            <th><input class="texto" type="text" id="pacientes_cirugia" name="" size="3" readonly></th>
+                        </tr>
+                        <tr>
+                            <th><label for="">Pacientes con intoxicación : </label></th>
+                            <th><input class="texto" type="text" id="pacientes_intoxicacion" name="" size="3" readonly></th>
+                        </tr>
+                        <tr>
+                            <th><label for="">Total de pacientes: </label></th>
+                            <th><input class="texto" type="text" id="total_pacientes" name="" size="3" readonly></th>
+                        </tr>
+    
+                    </table>
+
+                    <div>
+                        <img src="img/imss.png" alt="">
+                    </div>
+
+                </div>
+
+            </form>
+        
+        </div>
+
+        <footer class="c-footer">
+            
+            <div class="c-footer-center">
+                
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint earum quas quasi debitis et possimus odit nam hic cum. Rem id, est 
+                        consequuntur praesentium eligendi aliquid tempora labore eos!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint earum quas quasi debitis et possimus odit nam hic cum. Rem id, est 
+                        consequuntur praesentium eligendi aliquid tempora labore eos!
+                    </p>
+                </div>
+
+                <div class="redes"> 
+                    <h2>Redes sociales</h2>
+                    <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+
+            </div>
+            
+            <div class="legend">
+                
+                <hr>
+                <p>Todos los derechos reservados | <b>Pahuaman</b> </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
